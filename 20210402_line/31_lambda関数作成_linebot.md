@@ -1,4 +1,5 @@
-# 事前にbot.zipをCloud9にアップロードしておく
+# Lambda関数作成（handson-linebot）
+- 事前にbot.zipをCloud9にアップロードしておく
 
 ## 1.1 リージョンの指定
     export AWS_DEFAULT_REGION='ap-northeast-1'
@@ -35,9 +36,6 @@
     LAMBDA_FUNCTION_HANDLER="${LAMBDA_FUNCTION_NAME}.lambda_handler" \
         && echo ${LAMBDA_FUNCTION_HANDLER}
 
-## 1.9 タイムアウト秒指定
-    LAMBDA_TIMEOUT=10
-
 ## 2.1 関数の作成
     aws lambda create-function \
         --function-name ${LAMBDA_FUNCTION_NAME} \
@@ -45,8 +43,7 @@
         --runtime ${LAMBDA_FUNCTION_RUNTIME} \
         --role ${IAM_ROLE_ARN} \
         --handler ${LAMBDA_FUNCTION_HANDLER} \
-        --zip-file fileb://${FILE_LAMBDA_FUNCTION_ZIP} \
-        --timeout ${LAMBDA_TIMEOUT}
+        --zip-file fileb://${FILE_LAMBDA_FUNCTION_ZIP} 
 
 ## 3.1 確認
     aws lambda list-functions \

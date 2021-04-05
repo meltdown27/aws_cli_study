@@ -28,5 +28,5 @@
         --description ${APIGW_API_DESC}
 
 ## 3.1 確認
-    aws apigateway get-rest-apis \
+    aws apigatewayv2 get-apis \
         --query "items[?name == \`${APIGW_API_NAME}\`]"

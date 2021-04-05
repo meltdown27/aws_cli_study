@@ -1,15 +1,13 @@
-# ポリシー追加（AmazonS3FullAccess）
+# ポリシー追加（AWSLambdaFullAccess）
 
 ## 前提
-- handson-cloud9-linebot-roleというCloud9用のロールを作る
-- ロール：handson-cloud9-linebot-roleをCloud9で作成されたEC2にAttach
 - CloudShellでやる
 
 ## 1.1 IAMロール名
     IAM_ROLE_NAME='handson-cloud9-linebot-role'
 
 ## 1.2 IAMポリシー名
-    IAM_POLICY_NAME='AmazonS3FullAccess'
+    IAM_POLICY_NAME='AWSLambdaFullAccess'
 
 ## 1.3 ポリシーARNの取得
     IAM_POLICY_ARN=$( \
