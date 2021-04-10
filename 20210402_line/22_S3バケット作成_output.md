@@ -16,7 +16,7 @@
 ## 1.2 リージョン指定
     S3_BUCKET_LOCATION="ap-northeast-1"
 
-## 2.1 バケット作成 
+## 2.1 バケット作成
     aws s3api create-bucket \
         --bucket ${S3_BUCKET_NAME} \
         --create-bucket-configuration "LocationConstraint=${S3_BUCKET_LOCATION}"

@@ -1,4 +1,4 @@
-# ポリシー追加（AWSLambdaFullAccess）
+# ポリシー追加（AWSLambda_FullAccess）
 
 ## 前提
 - CloudShellでやる
@@ -7,7 +7,7 @@
     IAM_ROLE_NAME='handson-cloud9-linebot-role'
 
 ## 1.2 IAMポリシー名
-    IAM_POLICY_NAME='AWSLambdaFullAccess'
+    IAM_POLICY_NAME='AWSLambda_FullAccess'
 
 ## 1.3 ポリシーARNの取得
     IAM_POLICY_ARN=$( \

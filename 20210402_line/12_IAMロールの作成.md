@@ -10,7 +10,7 @@
     DIR_IAM_ROLE_DOC="${HOME}/environment/conf-handson-cli-lambda"
 
 ## 1.4 信頼ポリシードキュメント名
-    IAM_ROLE_DOC_NAME='handson-cli-lambda-role'
+    IAM_ROLE_DOC_NAME='handson-role-linebot'
 
 ## 1.5 信頼ポリシードキュメントファイル名
     FILE_IAM_ROLE_DOC="${DIR_IAM_ROLE_DOC}/${IAM_ROLE_DOC_NAME}.json" \
